@@ -4,6 +4,7 @@ const messages = require('../../dados/messages')
 
 module.exports = {
     name: 'limpar',
+    aliases: ["clear", "clearchat", "limparchat"],
     async execute(message, args) {
 
         if (!message.member.permissions.has("MANAGE_MESSAGES")) {

@@ -16,5 +16,7 @@ module.exports = {
     ticket_oppend: ' Você já possui um ticket em aberto. ',
     sucess_oppened_ticket: ' Ticket aberto ',
     ticket_message: ' Clique abaixo para encerrar seu ticket. ',
-    ticket_close_confirm: ' Você tem certeza que deseja encerrar o ticket? '
+    ticket_close_confirm: ' Você tem certeza que deseja encerrar o ticket? ',
+    embed_principal_help: ' Oiee, aqui você pode acessar para dar uma olhadinha em todos os comandos que eu tenho disponíveis para você UwU ',
+    dele_up_message: ' Apagar mensagem acima. '
 }

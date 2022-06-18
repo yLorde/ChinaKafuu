@@ -39,4 +39,6 @@ for (file of functions) {
 client.handleEvents(eventFiles, "./src/events")
 client.handleCommands(commandFolders, "./src/commands")
 
+require('./antiCrash.js')(process)
+
 client.login(auth.discord_token);

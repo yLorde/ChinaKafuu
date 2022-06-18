@@ -7,7 +7,8 @@ const emoji = require('../../dados/emojis')
 const messages = require('../../dados/messages')
 
 module.exports = {
-    name: 'criarcargo',
+    name: 'createrole',
+    aliases: ["criarcargo", "crole"],
     async execute(message, args) {
 
         if (!message.member.permissions.has('ADMINISTRATOR')) {

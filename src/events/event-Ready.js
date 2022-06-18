@@ -5,6 +5,7 @@ const Client = require('../database/Schemas/Client')
 const Function = require('../database/Schemas/Function')
 const Ticket = require('../database/Schemas/Ticket')
 const c = require('colors')
+const { MessageEmbed, MessageButton, MessageActionRow } = require('discord.js')
 
 module.exports = {
     name: 'ready',
@@ -54,8 +55,8 @@ module.exports = {
 
         client.user.setStatus('dnd');
         client.user.setActivity({
-            name: 'Visual Studio Code',
-            type: 'PLAYING'
+            name: 'Resso',
+            type: 'LISTENING'
         });
 
     },

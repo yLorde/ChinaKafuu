@@ -7,7 +7,8 @@ const emoji = require('../../dados/emojis')
 const messages = require('../../dados/messages')
 
 module.exports = {
-    name: 'tirarcargo',
+    name: 'addrole',
+    aliases: ["darcargo", "arole"],
     async execute(message, args, client) {
 
         if (!message.member.permissions.has('MANAGE_ROLES')) {
@@ -35,7 +36,7 @@ module.exports = {
 
         const embed = new MessageEmbed()
         .setTitle(`${emoji.importante} Gerenciador De Cargos`)
-        .setDescription(`Atualizado os cargos do membro ${user}, foi removido ${role}`)
+        .setDescription(`Atualizado os cargos do membro ${user}, foi adicionado ${role}`)
         .setColor('RED')
 
         const button = new MessageButton()
@@ -57,8 +58,8 @@ module.exports = {
             components: [row]
         })
 
-        user.roles.remove(role.id).catch(e => {
-            console.log(`[Erro no comando tirarcargo]: ${e}`)
+        user.roles.add(role.id).catch(e => {
+            console.log(`[Erro no comando darcargo]: ${e}`)
             send.edit({
                 embeds: [err],
                 components: [row]

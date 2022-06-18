@@ -12,4 +12,7 @@ module.exports = {
     fechatTicket: `<a:china_10:987375464702152734> `,
     termos: `<:panda_policial:987431662562463774>`,
     ticket_of: `<:china_msg:987377902381330532>`,
+
+    //help
+    
 }
