@@ -4,6 +4,7 @@ const emoji = require('../../dados/emojis')
 
 module.exports = {
     name: 'clima',
+    aliases: ["weather"],
     async execute(message, args) {
 
         weather.find({

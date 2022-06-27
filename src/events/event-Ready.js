@@ -40,7 +40,7 @@ module.exports = {
 ##############################################################
 ##                      BOT INICIADO                        ##
 ##                     Servidores: 00${client.guilds.cache.size}                      ##
-##                     usuários: 00${client.users.cache.size}                        ##
+##                     usuários: 0${client.users.cache.size}                       ##
 ##                     Comandos: 0${cmdSize}                        ##
 ##                   Criado por: Lord                       ##
 ##############################################################

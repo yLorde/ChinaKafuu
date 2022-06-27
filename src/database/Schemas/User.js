@@ -5,6 +5,7 @@ let userSchema = new Schema({
     idU: { type: String },
     idS: { type: String },
     tag: { type: String },
+    guild: { type: String },
     coins: { type: Number, default: 0 },
     daily: { type: Number, default: 0 },
     bank: { type: Number, default: 0 },
@@ -12,8 +13,6 @@ let userSchema = new Schema({
         xp: { type: Number, default: 0 },
         level: { type: Number, default: 1 },
         nextLevel: { type: Number, default: 100 },
-        id: { type: String, default: "null" },
-        tag: { type: String, default: "null" },
     },
     work: {
         exp: { type: Number, default: 1 },

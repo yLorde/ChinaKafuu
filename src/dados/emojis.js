@@ -5,6 +5,7 @@ module.exports = {
     discord: `<:china_discord:987392823768805387>`,
     china_02: `<a:china_02:987375440987553822>`,
     delete: `<a:china_02:987375440987553822>`,
+    apagar: `<a:china_02:987375440987553822>`,
     lixeira: `<:china_lixeira:987399252785389618>`,
     staff: `<:china_staff:987412647832088646>`,
     procurando: `<a:china_02:987375440987553822>`,
@@ -12,7 +13,6 @@ module.exports = {
     fechatTicket: `<a:china_10:987375464702152734> `,
     termos: `<:panda_policial:987431662562463774>`,
     ticket_of: `<:china_msg:987377902381330532>`,
-
-    //help
-    
+    pessoa: `<:usuariosdakafuu:987875902027337779>`,
+    alma: `<:alma:990658205342392471>`
 }

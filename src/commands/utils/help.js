@@ -104,7 +104,9 @@ module.exports = {
                     var embed_admin = new MessageEmbed()
                     .setTitle(emoji.title + ' Comandos De Admin')
                     .setColor('RED')
-                    .setDescription(`Sem comandos registrados.`)
+                    .setDescription(`
+**createrole/criarcargo** [COR] [NOME]\nPermissão: \`Administrador\`
+`)
 
                     msg.edit({
                         content: message.author.toString(),
@@ -182,7 +184,12 @@ module.exports = {
                     var embed_mod = new MessageEmbed()
                     .setTitle(emoji.title + ' Comandos De Moderação')
                     .setColor('RED')
-                    .setDescription(`Sem comandos registrados.`)
+                    .setDescription(`
+**addrole/darcargo** [membro] [cargo] \nPermissão: \`Gerenciar Cargos\`\n
+**removerole/tirarcargo** [membro] [cargo]\nPermissão: \`Gerenciar Cargos\`\n
+**editchannel/renomearcanal** [canal] [novo nome]\nPermissão: \`Gerenciar Canais\`\n
+**limpar/clear** [quantidade]\nPermissão: \`Gerenciar Mensagens\`\n
+`)
 
                     msg.edit({
                         content: message.author.toString(),
@@ -208,7 +215,12 @@ module.exports = {
                     var embed_utils = new MessageEmbed()
                     .setTitle(emoji.title + ' Comandos De Utilidades')
                     .setColor('RED')
-                    .setDescription(`Sem comandos registrados.`)
+                    .setDescription(`
+**avatar** [membro/server] \nPermissão: \`Nenhuma\`\n
+**clima/weather** [cidade & país]\nPermissão: \`Nenhuma\`\n
+**guildinfo/serverinfo**\nPermissão: \`Nenhuma\`\n
+**userinfo/whois** [membro]\nPermissão: \`Nenhuma\`\n
+`)
 
                     msg.edit({
                         content: message.author.toString(),

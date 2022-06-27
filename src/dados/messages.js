@@ -18,5 +18,9 @@ module.exports = {
     ticket_message: ' Clique abaixo para encerrar seu ticket. ',
     ticket_close_confirm: ' Você tem certeza que deseja encerrar o ticket? ',
     embed_principal_help: ' Oiee, aqui você pode acessar para dar uma olhadinha em todos os comandos que eu tenho disponíveis para você UwU ',
-    dele_up_message: ' Apagar mensagem acima. '
+    dele_up_message: ' Apagar mensagem acima. ',
+    no_prefix: ' Ainda não havia nenhum prefix setado, como de padrão foi configurado o prefix !, mude com !prefix [novo prefixo]. ',
+    invalid_prefix: ' Você deve informar um prefix válido! De até no máximo 5 caracteres. ',
+    prefixo_igual: ' Esse prefix já está sendo usado nesse servidor, use um diferente. ',
+    level_up: ' você acaba de subir para o nível '
 }

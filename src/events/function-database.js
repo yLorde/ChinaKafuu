@@ -11,9 +11,12 @@ module.exports = {
 
         try {
 
+            if (message.author.bot) return;
+            if (!message.guild) return;
 
             var user = await User.findOne({
-                idU: message.author.id
+                idU: message.author.id,
+                idS: message.guild.id
             });
             var bot = await Client.findOne({
                 _id: client.user.id,
@@ -33,6 +36,7 @@ module.exports = {
                     idU: message.author.id,
                     idS: message.guild.id,
                     tag: message.author.tag,
+                    guild: message.guild.name
                 })
             }
     

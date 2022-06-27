@@ -3,7 +3,7 @@ const Schema = mongoose.Schema;
 
 let guildSchema = new Schema({
   idS: { type: String },
-  prefix: { type: String, default: "c." },
+  prefix: { type: String, default: "!" },
   nome: { type: String, default: "null" },
   welcome: {
     channel: { type: String, default: "null" },

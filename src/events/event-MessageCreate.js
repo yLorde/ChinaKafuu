@@ -1,5 +1,7 @@
 const Guild = require('../database/Schemas/Guild')
-const { yellow } = require('colors')
+const { yellow } = require('colors');
+const { seta } = require('../dados/emojis');
+const { no_prefix } = require('../dados/messages');
 
 module.exports = {
     name: 'messageCreate',
@@ -7,6 +9,17 @@ module.exports = {
 
         Guild.findOne({ idS: message.guild.id }, async function (err, server) {
         
+            if (!server.prefix) {
+                Guild.findOneAndUpdate(
+                    { idS: message.guild.id },
+                    { 
+                        $set: {
+                            prefix: '!'
+                        }
+                    }
+                )
+                return message.reply(seta + no_prefix)
+            }
             var prefix = server.prefix;
 
             if (

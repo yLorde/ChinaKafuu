@@ -1,4 +1,4 @@
-const { Client, Intents, Collection } = require("discord.js");
+const { Client, Intents, Collection, User } = require("discord.js");
 const auth = require("./dados/auth");
 const fs = require('fs');
 const path = require('path');
